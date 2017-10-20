@@ -19,6 +19,7 @@ using namespace cv;
 
 int main()
 {
+    int Score(0);
     int counter = 0;
     bool eatApple = true;
     Point apple;
@@ -30,7 +31,6 @@ int main()
         snake.push_back(Point(100 - i*len,100));
     Point direction(len,0);
     Point oldDirection(len,0);
-    int i = 10;
      Mat tmpImage = image.clone();
      srand(time(0));
      Scalar appleColor = Scalar(rand()%255,rand()%255,144);
@@ -69,6 +69,7 @@ int main()
         if((*snake.begin()).x > image.cols || (*snake.begin()).x < 0 || (*snake.begin()).y > image.rows || ((*snake.begin()).y < 0))
         {
             std :: cout << " YOU LOSE" << std :: endl;
+            std :: cout << " FINAL SCORE " << Score << std :: endl;
             exit(0);
         }
         it = snake.begin();
@@ -78,14 +79,17 @@ int main()
             if(*it == *(snake.begin()))
             {
                 std :: cout << " YOU LOSE" << std :: endl;
+                std :: cout << " FINAL SCORE " << Score << std :: endl;
                 exit(0);
             }
             it++;
         }
-        if(norm(*(snake.begin()) - apple) < 5)
+        if(norm(*(snake.begin()) - apple) < 8)
         {
+            Score++;
             counter = 3;
             appleColor = Scalar(rand()%255,rand()%255,144);
+            std :: cout << " YOUR SCORE IS " << Score << std :: endl;
             eatApple = true;
         }
         else if(counter != 0)

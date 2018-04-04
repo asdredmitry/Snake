@@ -1,9 +1,10 @@
 QT += core
-QT -= gui
 
 CONFIG += c++11
 INCLUDEPATH += /usr/local/include/opencv
-LIBS += -L/usr/local/lib -lopencv_core -lopencv_imgcodecs -lopencv_highgui
+#LIBS += -L/usr/local/lib -lopencv_core -lopencv_imgcodecs -lopencv_highgui
+LIBS +=  -lopencv
+
 
 TARGET = Snake
 CONFIG += console

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dmitry/Snake
+CMAKE_SOURCE_DIR = /home/dmitry/GitHub/Snake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dmitry/Snake
+CMAKE_BINARY_DIR = /home/dmitry/GitHub/Snake
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Snake.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Snake.dir/flags.make
 
 CMakeFiles/Snake.dir/main.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitry/Snake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Snake.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/main.cpp.o -c /home/dmitry/Snake/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dmitry/GitHub/Snake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Snake.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/main.cpp.o -c /home/dmitry/GitHub/Snake/main.cpp
 
 CMakeFiles/Snake.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snake.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/Snake/main.cpp > CMakeFiles/Snake.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dmitry/GitHub/Snake/main.cpp > CMakeFiles/Snake.dir/main.cpp.i
 
 CMakeFiles/Snake.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snake.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/Snake/main.cpp -o CMakeFiles/Snake.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dmitry/GitHub/Snake/main.cpp -o CMakeFiles/Snake.dir/main.cpp.s
 
 CMakeFiles/Snake.dir/main.cpp.o.requires:
 
@@ -90,37 +90,25 @@ Snake_EXTERNAL_OBJECTS =
 
 Snake: CMakeFiles/Snake.dir/main.cpp.o
 Snake: CMakeFiles/Snake.dir/build.make
-Snake: /usr/local/lib/libopencv_cudabgsegm.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudaobjdetect.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudastereo.so.3.3.0
-Snake: /usr/local/lib/libopencv_dnn.so.3.3.0
-Snake: /usr/local/lib/libopencv_ml.so.3.3.0
-Snake: /usr/local/lib/libopencv_shape.so.3.3.0
-Snake: /usr/local/lib/libopencv_stitching.so.3.3.0
-Snake: /usr/local/lib/libopencv_superres.so.3.3.0
-Snake: /usr/local/lib/libopencv_videostab.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudafeatures2d.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudacodec.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudaoptflow.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudalegacy.so.3.3.0
-Snake: /usr/local/lib/libopencv_calib3d.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudawarping.so.3.3.0
-Snake: /usr/local/lib/libopencv_features2d.so.3.3.0
-Snake: /usr/local/lib/libopencv_flann.so.3.3.0
-Snake: /usr/local/lib/libopencv_highgui.so.3.3.0
-Snake: /usr/local/lib/libopencv_objdetect.so.3.3.0
-Snake: /usr/local/lib/libopencv_photo.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudaimgproc.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudafilters.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudaarithm.so.3.3.0
-Snake: /usr/local/lib/libopencv_video.so.3.3.0
-Snake: /usr/local/lib/libopencv_videoio.so.3.3.0
-Snake: /usr/local/lib/libopencv_imgcodecs.so.3.3.0
-Snake: /usr/local/lib/libopencv_imgproc.so.3.3.0
-Snake: /usr/local/lib/libopencv_core.so.3.3.0
-Snake: /usr/local/lib/libopencv_cudev.so.3.3.0
+Snake: /usr/local/lib/libopencv_objdetect.so.3.4.0
+Snake: /usr/local/lib/libopencv_dnn.so.3.4.0
+Snake: /usr/local/lib/libopencv_videostab.so.3.4.0
+Snake: /usr/local/lib/libopencv_superres.so.3.4.0
+Snake: /usr/local/lib/libopencv_ml.so.3.4.0
+Snake: /usr/local/lib/libopencv_stitching.so.3.4.0
+Snake: /usr/local/lib/libopencv_shape.so.3.4.0
+Snake: /usr/local/lib/libopencv_photo.so.3.4.0
+Snake: /usr/local/lib/libopencv_calib3d.so.3.4.0
+Snake: /usr/local/lib/libopencv_features2d.so.3.4.0
+Snake: /usr/local/lib/libopencv_highgui.so.3.4.0
+Snake: /usr/local/lib/libopencv_videoio.so.3.4.0
+Snake: /usr/local/lib/libopencv_flann.so.3.4.0
+Snake: /usr/local/lib/libopencv_imgcodecs.so.3.4.0
+Snake: /usr/local/lib/libopencv_video.so.3.4.0
+Snake: /usr/local/lib/libopencv_imgproc.so.3.4.0
+Snake: /usr/local/lib/libopencv_core.so.3.4.0
 Snake: CMakeFiles/Snake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dmitry/Snake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Snake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dmitry/GitHub/Snake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Snake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Snake.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +125,6 @@ CMakeFiles/Snake.dir/clean:
 .PHONY : CMakeFiles/Snake.dir/clean
 
 CMakeFiles/Snake.dir/depend:
-	cd /home/dmitry/Snake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dmitry/Snake /home/dmitry/Snake /home/dmitry/Snake /home/dmitry/Snake /home/dmitry/Snake/CMakeFiles/Snake.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dmitry/GitHub/Snake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dmitry/GitHub/Snake /home/dmitry/GitHub/Snake /home/dmitry/GitHub/Snake /home/dmitry/GitHub/Snake /home/dmitry/GitHub/Snake/CMakeFiles/Snake.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Snake.dir/depend
 

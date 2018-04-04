@@ -8,7 +8,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <utility>
 #include <time.h>
-const std :: string path = "/home/dmitry/Snake/";
+const std :: string path = "/home/dmitry/GitHub/Snake/";
 const int len = 4;
 const int width = 3;
 int from4(int x)
